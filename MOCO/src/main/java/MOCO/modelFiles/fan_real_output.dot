@@ -1,0 +1,28 @@
+digraph g {
+
+	S7 -> S7 [label="setSpeed"];
+	S7 -> S3 [label="turnOff"];
+	S3 -> S3 [label="turnOff"];
+	S6 -> S6 [label="turnOn"];
+	S6 -> S6 [label="setSpeed"];
+	S1 -> S5 [label="turnOn"];
+	S1 -> S1 [label="turnOff"];
+	S5 -> S1 [label="turnOff"];
+	S6 -> S2 [label="turnOff"];
+	S2 -> S2 [label="turnOff"];
+	S5 -> S5 [label="setAngle"];
+	S4 -> S4 [label="turnOn"];
+	S4 -> S0 [label="turnOff"];
+	S7 -> S7 [label="turnOn"];
+	S0 -> S4 [label="turnOn"];
+	S6 -> S7 [label="setAngle"];
+	S4 -> S6 [label="setSpeed"];
+	S0 -> S0 [label="turnOff"];
+	S2 -> S6 [label="turnOn"];
+	S5 -> S5 [label="turnOn"];
+	S7 -> S7 [label="setAngle"];
+	S3 -> S7 [label="turnOn"];
+	S4 -> S5 [label="setAngle"];
+	S5 -> S7 [label="setSpeed"];
+
+}

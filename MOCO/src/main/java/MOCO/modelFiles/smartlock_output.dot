@@ -1,0 +1,6 @@
+digraph g {
+
+	S1 -> S0 [label="unlock|true|false"];
+	S0 -> S1 [label="lock|true|false"];
+
+}

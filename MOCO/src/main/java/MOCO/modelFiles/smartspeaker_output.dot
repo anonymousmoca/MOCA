@@ -1,0 +1,34 @@
+digraph g {
+
+	S9 -> S3 [label="turnOff|true|false"];
+	S7 -> S9 [label="playTrack|true|false"];
+	S9 -> S7 [label="stopTrack|true|false"];
+	S2 -> S7 [label="turnOn|true|false"];
+	S1 -> S5 [label="turnOn|true|false"];
+	S7 -> S7 [label="setVolume50|true|false"];
+	S8 -> S9 [label="playTrack|true|false"];
+	S7 -> S2 [label="turnOff|true|false"];
+	S6 -> S4 [label="stopTrack|true|false"];
+	S6 -> S6 [label="playTrack|true|false"];
+	S4 -> S4 [label="setVolume0|true|false"];
+	S5 -> S5 [label="setVolume0|true|false"];
+	S6 -> S6 [label="setVolume0|true|false"];
+	S8 -> S8 [label="setVolume50|true|false"];
+	S4 -> S7 [label="setVolume50|true|false"];
+	S5 -> S6 [label="playTrack|true|false"];
+	S4 -> S6 [label="playTrack|true|false"];
+	S9 -> S9 [label="setVolume50|true|false"];
+	S4 -> S0 [label="turnOff|true|false"];
+	S5 -> S1 [label="turnOff|true|false"];
+	S9 -> S6 [label="setVolume0|true|false"];
+	S8 -> S5 [label="setVolume0|true|false"];
+	S0 -> S4 [label="turnOn|true|false"];
+	S7 -> S4 [label="setVolume0|true|false"];
+	S8 -> S3 [label="turnOff|true|false"];
+	S6 -> S9 [label="setVolume50|true|false"];
+	S5 -> S8 [label="setVolume50|true|false"];
+	S3 -> S8 [label="turnOn|true|false"];
+	S9 -> S9 [label="playTrack|true|false"];
+	S6 -> S1 [label="turnOff|true|false"];
+
+}

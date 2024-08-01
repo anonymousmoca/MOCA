@@ -1,0 +1,37 @@
+digraph g {
+
+	S0 -> S3 [label="turnOn|true|false"];
+	S7 -> S1 [label="turnOff|true|false"];
+	S5 -> S3 [label="setModeAuto|true|false"];
+	S7 -> S4 [label="stopCleaning|true|false"];
+	S7 -> S6 [label="setModeAuto|true|false"];
+	S5 -> S4 [label="setModeEdge|true|false"];
+	S7 -> S8 [label="setModeSpot|true|false"];
+	S3 -> S0 [label="turnOff|true|false"];
+	S4 -> S5 [label="setModeSpot|true|false"];
+	S8 -> S8 [label="setModeSpot|true|false"];
+	S6 -> S8 [label="setModeSpot|true|false"];
+	S2 -> S5 [label="turnOn|true|false"];
+	S8 -> S5 [label="stopCleaning|true|false"];
+	S3 -> S5 [label="setModeSpot|true|false"];
+	S5 -> S2 [label="turnOff|true|false"];
+	S6 -> S3 [label="stopCleaning|true|false"];
+	S4 -> S3 [label="setModeAuto|true|false"];
+	S6 -> S0 [label="turnOff|true|false"];
+	S6 -> S7 [label="setModeEdge|true|false"];
+	S5 -> S8 [label="startCleaning|true|false"];
+	S3 -> S3 [label="setModeAuto|true|false"];
+	S4 -> S4 [label="setModeEdge|true|false"];
+	S7 -> S7 [label="setModeEdge|true|false"];
+	S8 -> S2 [label="turnOff|true|false"];
+	S5 -> S5 [label="setModeSpot|true|false"];
+	S4 -> S1 [label="turnOff|true|false"];
+	S6 -> S6 [label="setModeAuto|true|false"];
+	S3 -> S4 [label="setModeEdge|true|false"];
+	S4 -> S7 [label="startCleaning|true|false"];
+	S8 -> S6 [label="setModeAuto|true|false"];
+	S8 -> S7 [label="setModeEdge|true|false"];
+	S1 -> S4 [label="turnOn|true|false"];
+	S3 -> S6 [label="startCleaning|true|false"];
+
+}

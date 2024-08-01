@@ -1,0 +1,16 @@
+digraph g {
+
+	S2 -> S0 [label="turnOff|true|false"];
+	S2 -> S2 [label="setTimer0|true|false"];
+	S2 -> S3 [label="setTimer50|true|false"];
+	S3 -> S3 [label="setTimer50|true|false"];
+	S0 -> S2 [label="turnOn|true|false"];
+	S0 -> S1 [label="setTimer50|true|false"];
+	S0 -> S0 [label="setTimer0|true|false"];
+	S1 -> S0 [label="setTimer0|true|false"];
+	S3 -> S2 [label="setTimer0|true|false"];
+	S3 -> S1 [label="turnOff|true|false"];
+	S1 -> S3 [label="turnOn|true|false"];
+	S1 -> S1 [label="setTimer50|true|false"];
+
+}

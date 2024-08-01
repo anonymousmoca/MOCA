@@ -1,0 +1,16 @@
+digraph g {
+
+	S3 -> S1 [label="turnOff"];
+	S0 -> S0 [label="turnOff"];
+	S0 -> S2 [label="turnOn"];
+	S1 -> S3 [label="turnOn"];
+	S3 -> S3 [label="setTargetTemp"];
+	S2 -> S0 [label="turnOff"];
+	S3 -> S3 [label="turnOn"];
+	S2 -> S3 [label="setTargetTemp"];
+	S0 -> S1 [label="setTargetTemp"];
+	S1 -> S1 [label="turnOff"];
+	S2 -> S2 [label="turnOn"];
+	S1 -> S1 [label="setTargetTemp"];
+
+}
